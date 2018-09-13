@@ -3,6 +3,13 @@ body {
   font-family: 'Muli', sans-serif;
 }
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 section p:first-of-type {
   font-size: 120%
 }
