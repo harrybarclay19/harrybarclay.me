@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale-1">
     <title>Harry Barclay's Site of Beauty</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/master.css">
   </head>
   <body>
@@ -16,15 +17,7 @@
         <div class="burnham-squad">
           <img src="./Images/Burnham-boys.jpg" alt="burnham-boys" style="width:400px;height:300px">
         </div>
-
-        <div class="software-image">
-          <img src="./Images/software.jpg" alt="software" style="width:400px;height:300px">
-        </div>
-
-        <div class="cyber-image">
-          <img src="./Images/cyber-security.jpg" alt="cyber-security" style="width:400px;height:300px">
-        </div>
-
+        
         <nav class="primary-nav">
           <ul>
             <li>
@@ -41,8 +34,20 @@
       </header>
 
       <section class="page" id="about">
-        <h1>About Harry</h1>
-        <p>This website contains my views on rugby, software and information security!</p>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10">
+              <h1>About Harry</h1>
+              <p>This website contains my views on rugby, software and information security!</p>
+            </div>
+            <div class="col-md-2">
+              <figure>
+                <img src="./Images/me.jpg" alt="me looking decent">
+                <figcaption>Image &copy; Selfie</figcaption>
+              </figure>
+              </div>
+            </div>
+          </div>
       </section>
 
       <section class="page" id="learning-blog">
@@ -71,7 +76,13 @@
 
       <section class="page" id="contact">
         <header>
+          <h1>Contact me</h1>
           <p>Contact me at harrybarclay1999@hotmail.co.uk</p>
+          <form class="" action="index.html" method="get">
+            <label for="email-address">Email address</label>
+            <input type="text" name="email-address" value="">
+            <input type="submit" name="submit" value="Submit">
+          </form>
         </header>
       </section>
   </body>
